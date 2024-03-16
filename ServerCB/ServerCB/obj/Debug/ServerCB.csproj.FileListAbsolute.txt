@@ -1,0 +1,11 @@
+C:\Users\Davide\source\repos\ServerCB\ServerCB\bin\Debug\ServerCB.exe.config
+C:\Users\Davide\source\repos\ServerCB\ServerCB\bin\Debug\ServerCB.exe
+C:\Users\Davide\source\repos\ServerCB\ServerCB\bin\Debug\ServerCB.pdb
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.csproj.AssemblyReference.cache
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.csproj.SuggestedBindingRedirects.cache
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.Form1.resources
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.Properties.Resources.resources
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.csproj.GenerateResource.cache
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.csproj.CoreCompileInputs.cache
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.exe
+C:\Users\Davide\source\repos\ServerCB\ServerCB\obj\Debug\ServerCB.pdb
