@@ -1,0 +1,11 @@
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\bin\Debug\ClientCB.exe.config
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\bin\Debug\ClientCB.exe
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\bin\Debug\ClientCB.pdb
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.csproj.AssemblyReference.cache
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.csproj.SuggestedBindingRedirects.cache
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.Form1.resources
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.Properties.Resources.resources
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.csproj.GenerateResource.cache
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.csproj.CoreCompileInputs.cache
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.exe
+C:\Users\Davide\Source\Repos\Davihhhh\ClickBattle\ClientCB\ClientCB\obj\Debug\ClientCB.pdb
