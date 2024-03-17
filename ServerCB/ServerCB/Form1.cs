@@ -26,9 +26,11 @@ namespace ServerCB
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            giocatore1 = new Giocatore();
+            giocatore2 = new Giocatore();
             CaricaGiocatori();
         }       
-       
+
         // Variabili Server
         private List<Giocatore> giocatori;
         private TcpListener server;
@@ -107,8 +109,8 @@ namespace ServerCB
                 {
                     MessageBox.Show(eccezione.ToString());
                 }
-                if(!giocatore1.Equals(null) && !giocatore2.Equals(null))
-                {
+                if(!giocatore1.Equals(giocatore2) && !giocatore2.PunteggioMassimo.Equals(-1) && !giocatore2.PunteggioMassimo.Equals(-1))
+                {                 
                     Partita();
                 }
                 if(stop)
@@ -131,19 +133,19 @@ namespace ServerCB
 
                 // Genera una nuova porta per la connessione
                 int newPort = GetNextAvailablePort();
+                string p = "porta;" + newPort;
 
                 // Associa il nuovo TcpListener alla nuova porta
                 TcpListener newListener = new TcpListener(IPAddress.Any, newPort);
                 newListener.Start();
 
                 // Notifica al client la nuova porta
-                byte[] data = System.Text.Encoding.ASCII.GetBytes(newPort.ToString());
+                byte[] data = Encoding.UTF8.GetBytes(p);
                 client.GetStream().Write(data, 0, data.Length);
 
                 // Accetta una nuova connessione sulla nuova porta
                 client = newListener.AcceptTcpClient();
 
-                // Chiudi il nuovo TcpListener quando hai finito
                 newListener.Stop();
 
                 // Variabili del client
@@ -306,8 +308,9 @@ namespace ServerCB
         {
             try
             {
-                string nome1 = giocatore1.Nome, nome2 = giocatore2.Nome;
+                string nome1 = giocatore1.Nome, nome2 = giocatore2.Nome, response;
                 int punteggio1 = 0, punteggio2 = 0;
+                byte[] responseData;               
 
                 byte[] buffer = new byte[1024];
                 int bytesRead;
@@ -322,6 +325,12 @@ namespace ServerCB
 
                 stream1 = client1.GetStream();
                 stream2 = client2.GetStream();
+
+                response = "gioca";
+
+                responseData = Encoding.UTF8.GetBytes(response);
+                stream1.Write(responseData, 0, responseData.Length);
+                stream2.Write(responseData, 0, responseData.Length);
 
                 bytesRead = stream1.Read(buffer, 0, buffer.Length);
                 dataReceived1 = Encoding.UTF8.GetString(buffer, 0, bytesRead);             
@@ -343,8 +352,8 @@ namespace ServerCB
                     punteggio2 = Convert.ToInt32(msg[1]);
                 }
 
-                string response = "fine";
-                byte[] responseData;
+                response = "fine";
+                
                 responseData = Encoding.UTF8.GetBytes(response);
                 stream1.Write(responseData, 0, responseData.Length);
                 stream2.Write(responseData, 0, responseData.Length);

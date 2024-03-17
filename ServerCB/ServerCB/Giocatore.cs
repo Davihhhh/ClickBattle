@@ -33,6 +33,12 @@ namespace ServerCB
             PunteggioMassimo = punteggioMassimo;
             Vittorie = vittorie;
         }
+        public Giocatore()
+        {
+            Nome = "";
+            PunteggioMassimo = -1;
+            Vittorie = -1;
+        }
         
         public void AggiungiVittoria(int punteggio)
         {
